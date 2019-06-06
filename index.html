@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Invaders</title>
+    <link rel="stylesheet" href="./styles/game.css">
+</head>
+<body>
+    <div id="game-container">
+
+    </div>
+    <script src="./scripts/constants.js"></script>
+    <script src="./scripts/collision-detector.js"></script>
+    <script src="./scripts/game-objects-factory.js"></script>
+    <script src="./scripts/renderer.js"></script>
+    <script src="./scripts/game.js"></script>
+    <script>
+        const { Game } = window;
+
+        const game = new Game("#game-container", 920, 920);
+
+        game.start();
+    </script>
+</body>
+</html>
